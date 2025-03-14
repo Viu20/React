@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+// src/App.js
+import React from 'react';
+import Button from './components/Button';
+import Container from './components/Container';
+import Nav from './components/Nav';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const handleClick = () => {
+        alert('Hello, World!');
+    };
+
+    return (
+        <>
+            <Nav />
+            <Container>
+                <h1>Hello World App</h1>
+                <Button onClick={handleClick} label="Click me!" />
+            </Container>
+        </>
+    );
 }
 
 export default App;
+
