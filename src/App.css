@@ -36,3 +36,64 @@
     transform: rotate(360deg);
   }
 }
+
+/* Основные стили для контента */
+.app-container {
+  font-family: Arial, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  line-height: 1.6;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+h1 {
+  font-size: 2rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 10px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-top: 25px;
+}
+
+/* Список лабораторных */
+.lab-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.lab-list li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.lab-list li:last-child {
+  border-bottom: none;
+}
+
+/* Контент лабораторной */
+.lab-content {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 15px 0;
+  white-space: pre-line;
+}
+
+/* Подвал */
+.footer {
+  margin-top: 40px;
+  text-align: center;
+  color: #7f8c8d;
+  font-size: 0.9rem;
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+}
